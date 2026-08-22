@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IPO AVWAP Dashboard</title>
+
+  <style>
+
+  body{
+    background:#0f1115;
+    color:white;
+    font-family:Arial,sans-serif;
+    padding:20px;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+  }
+
+  th,td{
+    border:1px solid #333;
+    padding:10px;
+  }
+
+  .above{
+    color:#00d084;
+  }
+
+  .below{
+    color:#ff4f66;
+  }
+
+  .unavailable{
+    color:#999;
+  }
+
+  </style>
+</head>
+
+<body>
+
+<h1>IPO AVWAP Dashboard</h1>
+
+<p id="updated"></p>
+
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Company</th>
+<th>Exchange</th>
+<th>IPO Date</th>
+<th>Current Close</th>
+<th>IPO AVWAP</th>
+<th>Status</th>
+<th>Distance %</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+</tbody>
+</table>
+
+<script>
+
+fetch("data/ipos-live.json")
+.then(r => r.json())
+.then(data => {
+
+document.getElementById(
+"updated"
+).innerText =
+"Updated: " +
+data.generatedAtUtc;
+
+const tbody =
+document.getElementById(
+"tableBody"
+);
+
+data.rows.forEach(row => {
+
+const tr =
+document.createElement("tr");
+
+tr.innerHTML = `
+<td>${row.ticker}</td>
+<td>${row.company}</td>
+<td>${row.exchange}</td>
+<td>${row.ipoDate}</td>
+<td>${row.currentPrice ?? "—"}</td>
+<td>${row.ipoAvwap ?? "—"}</td>
+<td class="${row.status.toLowerCase()}">
+${row.status}
+</td>
+<td>${row.distancePct ?? "—"}</td>
+`;
+
+tbody.appendChild(tr);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
