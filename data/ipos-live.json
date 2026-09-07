@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-09-04T20:03:49.695451+00:00",
+  "generatedAtUtc": "2026-09-07T20:04:26.522571+00:00",
   "rows": [
     {
       "ticker": "SCTX",
@@ -21,7 +21,7 @@
       "exchange": "NASDAQ",
       "ipoDate": "2026-08-12",
       "currentPrice": 76.17,
-      "ipoAvwap": 67.79,
+      "ipoAvwap": 67.8,
       "distancePct": 12.35,
       "historyRows": 18,
       "latestBarDate": "2026-09-04",
