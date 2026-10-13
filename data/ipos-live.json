@@ -1,16 +1,16 @@
 {
-  "generatedAtUtc": "2026-10-09T23:42:26.440799+00:00",
+  "generatedAtUtc": "2026-10-13T01:43:46.708950+00:00",
   "rows": [
     {
       "ticker": "SCTX",
       "company": "Scribe Therapeutics",
       "exchange": "NASDAQ",
       "ipoDate": "2026-08-14",
-      "currentPrice": 21.17,
-      "ipoAvwap": 25.95,
-      "distancePct": -18.43,
-      "historyRows": 40,
-      "latestBarDate": "2026-10-09",
+      "currentPrice": 20.67,
+      "ipoAvwap": 25.8,
+      "distancePct": -19.88,
+      "historyRows": 41,
+      "latestBarDate": "2026-10-12",
       "status": "Below",
       "dataMode": "live",
       "tvSymbol": "NASDAQ:SCTX"
@@ -20,12 +20,12 @@
       "company": "Ionic Digital",
       "exchange": "NASDAQ",
       "ipoDate": "2026-08-12",
-      "currentPrice": 79.15,
+      "currentPrice": 75.71,
       "ipoAvwap": 77.16,
-      "distancePct": 2.58,
-      "historyRows": 42,
-      "latestBarDate": "2026-10-09",
-      "status": "Above",
+      "distancePct": -1.88,
+      "historyRows": 43,
+      "latestBarDate": "2026-10-12",
+      "status": "Below",
       "dataMode": "live",
       "tvSymbol": "NASDAQ:IOND"
     }
