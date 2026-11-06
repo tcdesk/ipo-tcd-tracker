@@ -1,3 +1,3 @@
 ticker,company,exchange,ipoDate,currentPrice,ipoAvwap,distancePct,historyRows,latestBarDate,status,dataMode,tvSymbol
-SCTX,Scribe Therapeutics,NASDAQ,2026-08-14,16.78,23.61,-28.93,58,2026-11-04,Below,live,NASDAQ:SCTX
-IOND,Ionic Digital,NASDAQ,2026-08-12,60.55,74.75,-18.99,60,2026-11-04,Below,live,NASDAQ:IOND
+SCTX,Scribe Therapeutics,NASDAQ,2026-08-14,15.48,23.52,-34.19,59,2026-11-05,Below,live,NASDAQ:SCTX
+IOND,Ionic Digital,NASDAQ,2026-08-12,54.75,74.3,-26.31,61,2026-11-05,Below,live,NASDAQ:IOND
